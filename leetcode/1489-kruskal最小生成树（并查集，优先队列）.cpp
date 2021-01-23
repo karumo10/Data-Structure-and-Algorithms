@@ -3,7 +3,7 @@
 #include <queue>
 #include <algorithm>
 using namespace std;
-// 没用优先队列反而过了，我麻了 
+// 没用优先队列反而过了，我麻了 ，是不是把vector放到优先队列里它内部每次的排序要好多时间。。
 class Solution_real {
 public:
     typedef vector<int> Edge;
@@ -108,6 +108,10 @@ public:
         return ans;
     }
 };
+
+
+
+
 // 超时的优先队列
 class Solution {
 public:
