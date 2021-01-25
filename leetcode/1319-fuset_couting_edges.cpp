@@ -30,6 +30,7 @@ public:
     }
     void setUnion(int a, int b) {
         int roota = find(a), rootb = find(b);
+        if (roota == rootb) return; // 防止重复合并，不然size会指数级放大！
         if (roota != rootb) {clusters--;}
         int sizea = -set[roota], sizeb = -set[rootb];
         if (sizea > sizeb) { // 按大小求并
