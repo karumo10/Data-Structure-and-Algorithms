@@ -86,7 +86,5 @@ public:
 };
 
 int main() {
-    FUSet set(10);
-    cout << set.size() << endl;
     return 0;
 }
