@@ -17,6 +17,7 @@ private:
     int clusters; // 群落数
 public:
     FUSet() {};
+    int size() {return num;}
     FUSet(int n) : num(n), clusters(n) {
         set.resize(n);
         for (int i = 0; i < n; i++) {
@@ -69,6 +70,10 @@ public:
     }
 };
 
-
+int main() {
+    FUSet set(10);
+    cout << set.size() << endl;
+    return 0;
+}
 
 
