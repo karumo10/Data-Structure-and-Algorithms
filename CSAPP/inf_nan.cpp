@@ -8,5 +8,6 @@ int main() {
     double a = 1.7e308;
     cout << NEG_INFINITY << NEG_ZERO << NAN << endl;
     cout << (int)a << endl; // overflow, intel cpu set 0x80000000 (1000....00) as the so-called "integer indefinite" to express those values that overflow by a cast from double/float to int
+    cout << (1.0/2==1/2.0) << endl;
     return 0;
 }
